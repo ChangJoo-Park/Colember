@@ -1,0 +1,24 @@
+<div class="container">
+
+  <div id="newPallet" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    {{#each colorSet as |color index|}}
+    <div class="colorBar">
+      {{spectrum-color-picker
+          color=color
+          preferredFormat="name"
+          showPalette="true"
+          onMove=(action "userMovedColorPicker" index)
+      }}
+    </div>
+    {{/each}}
+  </div>
+
+  <button type="button" class="btn btn-primary" {{action "savePallet"}}>
+    Save Pallet
+  </button>
+  <hr/>
+</div>
+<div>
+  {{outlet}}
+</div>
+

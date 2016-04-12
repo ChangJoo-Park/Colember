@@ -1,0 +1,12 @@
+{{outlet}}
+
+<div class="container">
+<button type="button" class="btn btn-default" {{action "newPallet"}}>
+  New Pallet
+</button>
+<div class="row">
+  {{#each model as |pallet|}}
+    {{pallet-view model=pallet}}
+  {{/each}}
+</div>
+</div>
