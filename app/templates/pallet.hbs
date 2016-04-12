@@ -1,14 +1,1 @@
-{{outlet}}
-<div id="main" class="container">
-<p>
-  <button type="button" class="pull-right btn btn-default" {{action "newPallet"}}>
-    New Pallet
-  </button>
-</p>
-<div class="clearfix"></div>
-<div class="row">
-  {{#each model as |pallet|}}
-    {{pallet-view model=pallet}}
-  {{/each}}
-</div>
-</div>
+{{liquid-outlet}}

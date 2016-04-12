@@ -5,8 +5,12 @@
       {{spectrum-color-picker
           color=color
           preferredFormat="name"
-          showPalette="true"
-          onMove=(action "userMovedColorPicker" index)
+          showPalette=false
+          showInput=true
+          showButtons=false
+          moveFiresChange=true
+          clickoutFiresChange=true
+          onMove=(action "userChangeColor" index color)
       }}
     </div>
     {{/each}}

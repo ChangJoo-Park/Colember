@@ -1,7 +1,6 @@
 /*
 Spectrum CSS
 */
-
 .sp-replacer {
   border: none;
   background: transparent;
@@ -19,29 +18,26 @@ Spectrum CSS
   padding: 0;
 }
 
-.sp-replacer .sp-dd {
-  display: none;
-}
-
-.sp-palette-container {
-  display: none;
-}
-
 .sp-container {
   border: none;
-
+  position: absolute!important;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #d7e5ed;
+  padding: 0;
+  right: 100px!important;
+  top: 100px!important;
+  left: auto!important;
   .sp-picker-container {
     background-color: white;
     border: none;
     width: 300px;
   }
-
   .sp-button-container {
     font-family: "Open Sans", "Courier", "Avenir";
     .sp-cancel {
       font-size: 1em;
     }
-
     .sp-choose {
       background-image: none;
       background-color: white;
