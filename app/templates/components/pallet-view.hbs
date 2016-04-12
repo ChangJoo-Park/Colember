@@ -1,6 +1,14 @@
-<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-  <div class="colorContainer">
-    {{color-view model=model.colors}}
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 colorWrapper">
+  {{color-view model=model.colors}}
+  <div class="details">
+    <div class="pull-left">
+    </div>
+    <div class="pull-right">
+      <span class="timeFromNow">
+        {{moment-from-now model.createdAt hideSuffix=true}}
+      </span>
+    </div>
   </div>
-  <div class="actions"></div>
 </div>
+
+
