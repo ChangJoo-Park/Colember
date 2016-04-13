@@ -16,11 +16,13 @@ export default Ember.Controller.extend({
           rgb: color,
           palette: newPalette
         });
-        newColor.save();
-        newPalette.get('colors').pushObject(newColor);
+        newColor.save().then(function(color){
+          newPalette.get('colors').pushObject(newColor);
+        });
       });
-      newPalette.save();
-      this.transitionToRoute('palette');
+      newPalette.save().then(function(){
+        that.transitionToRoute('palette');
+      });
     },
     userChangeColor(index, oldColor, newColor) {
       this.set(`colorSet.${index}`, newColor);

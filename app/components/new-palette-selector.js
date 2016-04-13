@@ -31,7 +31,7 @@ export default Ember.Component.extend({
 		this.set('colorSet', []);
     let colorLength = 4;
     for(var i = 0 ; i < colorLength ; i++) {
-      let newColor = colorList[_.random(0,colorList.length)];
+      let newColor = colorList[_.random(0,colorList.length - 1)];
      this.colorSet.push(newColor);
     }
     this.sendAction('changePalette', this.get('colorSet'));
