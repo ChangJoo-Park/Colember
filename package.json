@@ -1,7 +1,7 @@
 {
   "name": "some-ember",
-  "version": "0.0.0",
-  "description": "Small description for some-ember goes here",
+  "version": "0.0.1",
+  "description": "Make you own pallet on web browser",
   "private": true,
   "directories": {
     "doc": "doc",

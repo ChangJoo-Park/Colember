@@ -1,0 +1,16 @@
+<div id="newPallet">
+  {{#each colorSet as |color index|}}
+  <div class="colorBar">
+    {{spectrum-color-picker
+        color=color
+        preferredFormat="name"
+        showPalette=false
+        showInput=true
+        showButtons=false
+        moveFiresChange=true
+        clickoutFiresChange=true
+        onMove=(action "userChangeColor" index color)
+    }}
+  </div>
+  {{/each}}      
+</div>

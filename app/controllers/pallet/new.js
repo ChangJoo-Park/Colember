@@ -23,8 +23,11 @@ export default Ember.Controller.extend({
       newPallet.save();
       this.transitionToRoute('pallet');
     },
-    userMovedColorPicker(index, oldColor, newColor) {
+    userChangeColor(index, oldColor, newColor) {
       this.set(`colorSet.${index}`, newColor);
+    },
+    changePallet(colors) {
+      this.set('colorSet', colors);
     }
   },
 
