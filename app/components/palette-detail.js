@@ -59,7 +59,7 @@ export default Ember.Component.extend({
         	formattedColor = `new Color(255, ${colorValue._r}, ${colorValue._g}, ${colorValue._b});`;
           break;
         default:
-          formattedColor = 'Please Select Color Type.'
+          formattedColor = 'Please Select Color Type.';
           break;
       }
       formatted.push(formattedColor);

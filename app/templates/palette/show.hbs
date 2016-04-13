@@ -1,5 +1,9 @@
 <div class="container">
-	{{!-- Details --}}
+{{!-- 	<p class="pull-right">
+		<button class="btn btn-sm btn-danger" {{action "deletePalette" model.id}}>Delete</button>
+	</p>
+	<div class="clearfix"></div>
+ --}}	{{!-- Details --}}
 	{{palette-detail colors=model.colors}}
 	<div id="singlePalette">
 		<div data-palette-id={{model.id}} class="paletteWrapper">
