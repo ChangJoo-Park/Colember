@@ -28,7 +28,19 @@ body {
 /* New Pallet */
 
 #singlePalette {
-  height: 400px;
+  height: 60vh;
+  padding: 40px;
+  margin: 30px;
+  .paletteWrapper {
+    height: 100%;
+    .colorContainer {
+      height: 100%;
+    }
+  }
+}
+
+#newPalette {
+  height: 80vh;
   padding: 40px;
   margin: 30px;
 }
@@ -37,7 +49,7 @@ body {
   width: 100%;
 }
 
-#singlePalette {
+#singlePalette, #newPalette {
   .colorBar:nth-child(1) {
     height: 40%;
   }

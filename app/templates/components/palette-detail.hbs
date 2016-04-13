@@ -1,0 +1,16 @@
+<div class="container">
+	<div>
+		{{#bs-button-group value=colorFormat type="radio"}}
+		  {{#bs-button value=1}}Swift{{/bs-button}}
+		  {{#bs-button value=2}}HSV{{/bs-button}}
+		  {{#bs-button value=3}}RGB{{/bs-button}}
+		{{/bs-button-group}}
+	</div>
+	<div>
+		<ul>
+			{{#each formattedColorSet as |color|}}
+			<li>{{color}}</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>
