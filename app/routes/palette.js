@@ -2,12 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.query('pallet',{ orderBy: 'createdAt'});
+    return this.store.query('palette',{ orderBy: 'createdAt'});
   },
 
   actions: {
     newPallet() {
-      this.transitionTo('pallet.new');
+      // this.transitionTo('palette.new');
     }
   }
 });

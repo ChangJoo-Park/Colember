@@ -4,8 +4,8 @@ import faker from 'faker';
 export default Ember.Controller.extend({
   colorSet: [],
   actions: {
-    savePallet() {
-      let newPallet = this.store.createRecord('pallet', {
+    savePalette() {
+      let newPalette = this.store.createRecord('palette', {
         createdAt: new Date()
       });
 
@@ -15,18 +15,18 @@ export default Ember.Controller.extend({
       colors.forEach(function(color){
         let newColor = that.store.createRecord('color',{
           rgb: color,
-          pallet: newPallet
+          palette: newPalette
         });
         newColor.save();
-        newPallet.get('colors').pushObject(newColor);
+        newPalette.get('colors').pushObject(newColor);
       });
-      newPallet.save();
-      this.transitionToRoute('pallet');
+      newPalette.save();
+      this.transitionToRoute('palette');
     },
     userChangeColor(index, oldColor, newColor) {
       this.set(`colorSet.${index}`, newColor);
     },
-    changePallet(colors) {
+    changePalette(colors) {
       this.set('colorSet', colors);
     }
   },

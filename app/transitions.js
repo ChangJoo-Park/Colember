@@ -1,7 +1,7 @@
 export default function(){
   this.transition(
-    this.fromRoute('pallet.index'),
-    this.toRoute('pallet.new'),
+    this.fromRoute('palette.index'),
+    this.toRoute('palette.new'),
     this.use('toLeft'),
     this.reverse('toRight')
   );

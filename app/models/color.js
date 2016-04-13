@@ -4,5 +4,5 @@ import attr from 'ember-data/attr';
 
 export default Model.extend({
   rgb: attr('string'),
-  pallet: DS.belongsTo('pallet')
+  palette: DS.belongsTo('palette')
 });

@@ -1,0 +1,9 @@
+<div id="main" class="container">
+<p>
+  {{#link-to "palette.new" class="pull-right btn btn-default"}}New Palette{{/link-to}}
+</p>
+<div class="clearfix"></div>
+	<div class="row">
+		{{palette-list palettes=model}}
+	</div>
+</div>

@@ -10,13 +10,12 @@ export default Ember.Component.extend({
       let newColor = faker.internet.color();
      this.colorSet.push(newColor);
     }
-    this.sendAction('changePallet', this.get('colorSet'));
+    this.sendAction('changePalette', this.get('colorSet'));
 	},
 	actions: {
     userChangeColor(index, oldColor, newColor) {
-    	console.log("component userChangeColor")
       this.set(`colorSet.${index}`, newColor);
-      this.sendAction('changePallet', this.get('colorSet'));
+      this.sendAction('changePalette', this.get('colorSet'));
     },
 	}
 });
