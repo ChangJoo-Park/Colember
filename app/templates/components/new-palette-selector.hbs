@@ -1,4 +1,4 @@
-<div id="newPallet">
+<div id="singlePalette">
   {{#each colorSet as |color index|}}
   <div class="colorBar">
     {{spectrum-color-picker
@@ -10,7 +10,8 @@
         moveFiresChange=true
         clickoutFiresChange=true
         onMove=(action "userChangeColor" index color)
+        onChange=(action "userChangeColor" index color)
     }}
   </div>
-  {{/each}}      
+  {{/each}}
 </div>

@@ -1,5 +1,4 @@
 import Ember from 'ember';
-import faker from 'faker';
 
 export default Ember.Controller.extend({
   colorSet: [],
@@ -30,12 +29,4 @@ export default Ember.Controller.extend({
       this.set('colorSet', colors);
     }
   },
-
-  init(){
-    let colorLength = 4;
-    for(var i = 0 ; i < colorLength ; i++) {
-      let newColor = faker.internet.color();
-     this.colorSet.push(newColor);
-    }
-  }
 });
