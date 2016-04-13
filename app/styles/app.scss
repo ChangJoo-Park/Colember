@@ -1,16 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
 @import "spectrum-colorpicker";
-
 body {
   font-family: "Open Sans", "Courier", "Avenir"
 }
+
+
 /* Main */
 
 #main.container {
   width: 90%;
 }
 
+
 /* Navigation */
+
 .navbar {
   background-color: "#ecf0f1";
   .navbar-header {
@@ -24,6 +27,7 @@ body {
     }
   }
 }
+
 
 /* New Pallet */
 
@@ -49,7 +53,8 @@ body {
   width: 100%;
 }
 
-#singlePalette, #newPalette {
+#singlePalette,
+#newPalette {
   .colorBar:nth-child(1) {
     height: 40%;
   }
@@ -67,6 +72,7 @@ body {
 .colorWrapper {
   margin-bottom: 2em;
 }
+
 .colorContainer {
   transition: box-shadow 0.5s;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
@@ -90,6 +96,7 @@ body {
 
 
 /* List */
+
 .details {
   margin: 20px;
 }
@@ -113,6 +120,7 @@ body {
   }
 }
 
+
 /* Color View */
 
 .colorLabel {
@@ -129,4 +137,22 @@ body {
 
 .timeFromNow {
   font-size: 0.8em;
+}
+
+
+/* ColorCode Details */
+
+.colorDetailsContainer {
+  div.colorCodesButtons {
+    text-align: right;
+    margin-bottom: 2em;
+  }
+  div.colorCodes {
+    font-family: "Monaco", "Menlo", "Courier", "serif", "sans-serif";
+    text-align: right;
+    ul.colorCodesList {
+      list-style-type: none;
+      li.colorCodesListItem {}
+    }
+  }
 }

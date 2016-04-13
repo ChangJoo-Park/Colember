@@ -1,15 +1,23 @@
-<div class="container">
-	<div>
+<div class="container colorDetailsContainer">
+	<div class="colorCodesButtons">
 		{{#bs-button-group value=colorFormat type="radio"}}
-		  {{#bs-button value=1}}Swift{{/bs-button}}
+		  {{#bs-button value=1}}NAME{{/bs-button}}
 		  {{#bs-button value=2}}HSV{{/bs-button}}
-		  {{#bs-button value=3}}RGB{{/bs-button}}
+		  {{#bs-button value=3}}HSL{{/bs-button}}
+		  {{#bs-button value=4}}HEX{{/bs-button}}
+		  {{#bs-button value=5}}HEX8{{/bs-button}}
+		  {{#bs-button value=6}}RGB{{/bs-button}}
+		  {{#bs-button value=7}}RGB(%){{/bs-button}}
+		  {{#bs-button value=8}}Swift(RGBA){{/bs-button}}
+		  {{#bs-button value=9}}Android(ARGB){{/bs-button}}
+		  {{#bs-button value=10}}Java(RGBA){{/bs-button}}
+		  {{#bs-button value=11}}.Net(ARGB){{/bs-button}}
 		{{/bs-button-group}}
 	</div>
-	<div>
-		<ul>
+	<div class="colorCodes">
+		<ul class="colorCodesList">
 			{{#each formattedColorSet as |color|}}
-			<li>{{color}}</li>
+			<li class="colorCodesListItem">{{color}}</li>
 			{{/each}}
 		</ul>
 	</div>

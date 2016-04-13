@@ -1,9 +1,9 @@
 <div class="container">
+	{{!-- Details --}}
+	{{palette-detail colors=model.colors}}
 	<div id="singlePalette">
 		<div data-palette-id={{model.id}} class="paletteWrapper">
 			{{color-view model=model.colors}}
 		</div>
 	</div>
-	{{!-- Details --}}
-	{{palette-detail colors=model.colors}}
 </div>
