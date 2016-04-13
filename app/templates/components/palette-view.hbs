@@ -1,7 +1,11 @@
 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 colorWrapper">
-  {{color-view model=model.colors}}
+  <div data-palette-id={{model.id}}>
+    {{color-view model=model.colors}}
+  </div>
+
   <div class="details">
     <div class="pull-left">
+      {{#link-to "palette.show" model.id}}Show{{/link-to}}
     </div>
     <div class="pull-right">
       <span class="timeFromNow">

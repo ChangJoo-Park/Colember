@@ -1,5 +1,5 @@
-{{#each sortedPalettes as |palette|}}
-  {{palette-view model=palette}}
-{{/each}}
-
-
+{{#liquid-bind sortedPalettes as |palettes|}}
+	{{#each palettes as |palette|}}
+	  {{palette-view model=palette}}
+	{{/each}}
+{{/liquid-bind}}
