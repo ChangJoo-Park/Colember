@@ -10,6 +10,20 @@ body {
   width: 90%;
 }
 
+/* Navigation */
+.navbar {
+  background-color: "#ecf0f1";
+  .navbar-header {
+    .navbar-brand {
+      color: black;
+      transition: color 1s;
+    }
+    .navbar-brand:hover {
+      color: red;
+      transition: color 1s;
+    }
+  }
+}
 
 /* New Pallet */
 
@@ -38,6 +52,9 @@ body {
   }
 }
 
+.colorWrapper {
+  margin-bottom: 2em;
+}
 .colorContainer {
   transition: box-shadow 0.5s;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);

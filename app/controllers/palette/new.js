@@ -16,7 +16,7 @@ export default Ember.Controller.extend({
           rgb: color,
           palette: newPalette
         });
-        newColor.save().then(function(color){
+        newColor.save().then(function(){
           newPalette.get('colors').pushObject(newColor);
         });
       });
